@@ -13,8 +13,8 @@ namespace EFCoreAssignment.Configurations
     {
         public void Configure(EntityTypeBuilder<StudentCourse> builder)
         {
-            builder.HasKey(s => s.Student_id);
-            builder.HasKey(s => s.Course_id);
+            builder.HasKey(s => s.StudentId);
+            builder.HasKey(s => s.CourseId);
             builder.Property(s => s.Grade).IsRequired();
         }
     }

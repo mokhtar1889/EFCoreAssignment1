@@ -31,8 +31,8 @@ namespace EFCoreAssignment.Models
         public int Address { get; set; }
         [Range(20,30)]
         public int Age { get; set; }
-        [Key]
-        public int Dep_id { get; set; }
+        public int DepartmentId { get; set; }
+        public Department Department { get; set; }
 
         #endregion
     }

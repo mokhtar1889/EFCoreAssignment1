@@ -35,7 +35,8 @@ namespace EFCoreAssignment.Models
         public string Address { get; set; }
         public decimal HourRate { get; set; }
         [Key]
-        public int Department_id { get; set; }
+        public int DepartmentId { get; set; }
+        public Department Department { get; set; }
 
         #endregion
 

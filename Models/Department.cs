@@ -32,7 +32,9 @@ namespace EFCoreAssignment.Models
         public string Name { get; set; }
 
         [Key]
-        public int Instructor_id { get; set; }
+        public int InstructorId { get; set; }
+
+        public Instructors Instructor { get; set; }
 
         public DateTime HiringDate { get; set; }
         #endregion

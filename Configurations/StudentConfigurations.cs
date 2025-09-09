@@ -16,7 +16,6 @@ namespace EFCoreAssignment.Configurations
             builder.HasKey(s => s.Id);
             builder.Property(s => s.FName).IsRequired();
             builder.Property(s => s.LName).IsRequired();
-            builder.HasKey(s => s.Dep_id);
 
         }
     }

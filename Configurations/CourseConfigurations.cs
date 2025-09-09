@@ -14,7 +14,6 @@ namespace EFCoreAssignment.Configurations
         public void Configure(EntityTypeBuilder<Course> builder)
         {
             builder.HasKey(c => c.CourseId);
-            builder.HasKey(c => c.Top_id);
             builder.Property(c => c.Duration).IsRequired();
             builder.Property(c => c.Name).HasMaxLength(20).IsRequired();
         }

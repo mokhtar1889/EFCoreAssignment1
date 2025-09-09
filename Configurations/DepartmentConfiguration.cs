@@ -9,7 +9,7 @@ namespace EFCoreAssignment.Configurations
         public void Configure(EntityTypeBuilder<Department> builder)
         {
             builder.HasKey(d => d.Id);
-            builder.HasKey(d => d.Instructor_id);
+            builder.HasKey(d => d.InstructorId);
             builder.Property(d => d.Name).IsRequired().HasMaxLength(20);
         }
     }

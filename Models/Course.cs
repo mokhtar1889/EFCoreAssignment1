@@ -39,8 +39,9 @@ namespace EFCoreAssignment.Models
 
         public string Description { get; set; }
 
-        [Key]
-        public int Top_id { get; set; }
+        public int TopicId{ get; set; }
+
+        public Topic Topic { get; set; }
 
         #endregion
 

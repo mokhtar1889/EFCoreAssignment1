@@ -20,9 +20,11 @@ namespace EFCoreAssignment.Models
 
         #region Mapping by annotation
         [Key]
-        public int Instructor_id { get; set; }
+        public int InstructorId { get; set; }
+        public Instructors Instructor { get; set; }
         [Key]
-        public int Course_id { get; set; }
+        public int CourseId { get; set; }
+        public Course Course { get; set; }
         [Required]
         public string Evaluate { get; set; }
 
